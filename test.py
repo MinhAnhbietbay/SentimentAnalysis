@@ -14,7 +14,7 @@ from sklearn.svm import SVC
 from sklearn.metrics import accuracy_score, confusion_matrix, classification_report
 
 # 1. Tải và Khám phá Dữ liệu (EDA)
-data = pd.read_csv('datasets/amazon_reviews_sample.csv')  # Đường dẫn dataset
+data = pd.read_csv('datasets/amazon_reviews_sample.csv')
 
 # Xem dữ liệu đầu tiên
 print("Dữ liệu đầu tiên:")
@@ -60,7 +60,7 @@ plt.axis('off')
 plt.title('Word Cloud cho Negative Reviews')
 plt.show()
 
-# 2. Phương pháp Lexicon-based (Rule-based)
+# 2. Lexicon-based (Rule-based)
 # 2.1 TextBlob (Polarity và Subjectivity)
 def textblob_sentiment(text):
     blob = TextBlob(text)
